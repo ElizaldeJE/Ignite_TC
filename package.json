@@ -1,0 +1,24 @@
+{
+  "name": "ignite_tc",
+  "version": "1.0.0",
+  "description": "This is the tech challenge for ignite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElizaldeJE/Ignite_TC.git"
+  },
+  "keywords": [
+    "tech",
+    "challenge",
+    "ignite"
+  ],
+  "author": "Javier Elizalde Solis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElizaldeJE/Ignite_TC/issues"
+  },
+  "homepage": "https://github.com/ElizaldeJE/Ignite_TC#readme"
+}
