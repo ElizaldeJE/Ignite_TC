@@ -1,0 +1,42 @@
+{
+  "name": "ignite_tc",
+  "version": "1.0.0",
+  "description": "This is the tech challenge for ignite",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "*",
+    "express": "^4.15.0",
+    "jquery": "^3.3.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router-dom": "*"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "*",
+    "babel-preset-react": "6.23.0",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react-dev": "webpack -d --watch",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElizaldeJE/Ignite_TC.git"
+  },
+  "keywords": [
+    "tech",
+    "challenge",
+    "ignite"
+  ],
+  "author": "Javier Elizalde Solis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElizaldeJE/Ignite_TC/issues"
+  },
+  "homepage": "https://github.com/ElizaldeJE/Ignite_TC#readme"
+}
