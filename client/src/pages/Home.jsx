@@ -1,5 +1,6 @@
 import React from "react";
 
+import Header from "../components/header/Headerr.jsx";
 import PersonList from "../components/home/PersonList.jsx";
 import IsPrime from "../components/numbers/PrimeOrNot.jsx";
 import CapitalLetterss from "../components/capitalLetters/MakeAllCapitals.jsx";
@@ -14,14 +15,15 @@ class People extends React.Component {
   render() {
     return (
           <div>
+          <div>
+            <center><Header /></center>
+          </div>
             <div>
               <center><PersonList /></center>
             </div>
-              <center><h1>----------------</h1></center>
             <div>
               <center><IsPrime /></center>
             </div>
-              <center><h1>----------------</h1></center>
             <div>
               <center><CapitalLetterss /></center>
             </div>

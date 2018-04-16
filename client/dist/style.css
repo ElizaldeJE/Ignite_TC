@@ -1,0 +1,72 @@
+/*This is for the grid with the people information*/
+.peopleGrid{
+  background: #FF7F50;
+  margin-bottom: 3%;
+  line-height: 22px;
+}
+
+/*This is for the grid with the number information*/
+.numbersGrid{
+  background: #FF7F50;
+  margin-bottom: 3%;
+  line-height: 22px;
+}
+
+/*This is for the grid with the text information*/
+.textGrid{
+  background: #FF7F50;
+  margin-bottom: 3%;
+  line-height: 22px;
+}
+
+/*This is for the whole body*/
+#theBody{
+  background: white;
+}
+
+/*This is the tiles for each grid*/
+.titles{
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: -2%;
+}
+
+/*This is the tiles for each grid*/
+.titleText{
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: -0.5%;
+}
+
+/*This is the title in the header*/
+.titleText2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: -0.5%;
+  color: #FF7F50;
+  font-size: 150%;
+}
+
+/*This is the text for each grid*/
+.texts{
+  font-family: 'Playfair Display', serif;
+}
+
+/*This is for the titles row*/
+.titleRow{
+  height: 50px;
+  background: white;
+  color: #FF7F50;
+}
+.titleRowP{
+  height: 55px;
+  background: white;
+  color: #FF7F50;
+}
+
+/*This is for the space between the title and text*/
+#spacingBetweenTittleNText{
+  margin-bottom: -1%;
+}
+
+/*This is for the color of all the texts that are not the titles*/
+.textColor{
+  color: white;
+}

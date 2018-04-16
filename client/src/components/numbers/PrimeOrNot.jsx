@@ -1,5 +1,7 @@
-import React from 'react';
 import $ from 'jquery';
+import React from 'react';
+import { Grid, Row, Col } from "react-bootstrap";
+
 
 export default class IsPrime extends React.Component {
   constructor(props) {
@@ -36,11 +38,18 @@ componentDidMount() {
 
   render() {
     return (
-      <div>
-        <ul>
-          { this.state.numbers.map(digitos => <li>{this.primeOrNot(digitos.number)}</li>)}
-        </ul>
-      </div>
+    <Grid className="numbersGrid">
+      <Row className="titleRow" >
+      <Col xs={6} md={12}>
+        <center><h1 className="titles" id="spacingBetweenTittleNText">Numbers</h1></center>
+        </Col>
+      </Row>
+      <Row className="numbersRow" id="texts">
+        <Col xs={6} md={12}>
+        { this.state.numbers.map(digitos => <text className="textColor"><br/>{this.primeOrNot(digitos.number)}</text>)}
+        </Col>
+      </Row>
+    </Grid>
     )
   }
 };
