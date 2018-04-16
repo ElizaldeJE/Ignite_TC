@@ -38,14 +38,18 @@ componentDidMount() {
 
   render() {
     return (
-      <Grid className="numbersGrid">
-      <center><h1 className="titles">Numbers</h1></center>
-        <Row className="numbersRow" id="texts">
-          <Col xs={6} md={12}>
-          { this.state.numbers.map(digitos => <text><br/>{this.primeOrNot(digitos.number)}</text>)}
-          </Col>
-        </Row>
-      </Grid>
+    <Grid className="numbersGrid">
+      <Row className="titleRow" >
+      <Col xs={6} md={12}>
+        <center><h1 className="titles" id="spacingBetweenTittleNText">Numbers</h1></center>
+        </Col>
+      </Row>
+      <Row className="numbersRow" id="texts">
+        <Col xs={6} md={12}>
+        { this.state.numbers.map(digitos => <text className="textColor"><br/>{this.primeOrNot(digitos.number)}</text>)}
+        </Col>
+      </Row>
+    </Grid>
     )
   }
 };

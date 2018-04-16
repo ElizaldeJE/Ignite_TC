@@ -38,10 +38,14 @@ componentDidMount() {
   render() {
     return (
 <Grid className="peopleGrid">
-  <center><h1 className="titles">People</h1></center>
+  <Row className="titleRowP" id="spacingBetweenTittleNText" >
+    <Col xs={6} md={12}>
+      <center><h1 className="titles">People</h1></center>
+    </Col>
+  </Row>
   <Row className="peopleRow" id="texts">
     <Col xs={6} md={12}>
-        { this.state.people.map(person => <text><br/>{ person.first_name + " " + person.last_name + " is " + this.get_age(person.birth_date) + " " + "Years Old" }</text>)}
+        { this.state.people.map(person => <text className="textColor"><br/>{ person.first_name + " " + person.last_name + " is " + this.get_age(person.birth_date) + " " + "Years Old" }</text>)}
     </Col>
   </Row>
 </Grid>

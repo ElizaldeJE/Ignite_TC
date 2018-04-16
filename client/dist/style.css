@@ -24,7 +24,6 @@
   background: white;
 }
 
-
 /*This is the tiles for each grid*/
 .titles{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -40,4 +39,26 @@
 /*This is the text for each grid*/
 .texts{
   font-family: 'Playfair Display', serif;
+}
+
+/*This is for the titles row*/
+.titleRow{
+  height: 50px;
+  background: white;
+  color: #FF7F50;
+}
+.titleRowP{
+  height: 55px;
+  background: white;
+  color: #FF7F50;
+}
+
+/*This is for the space between the title and text*/
+#spacingBetweenTittleNText{
+  margin-bottom: -1%;
+}
+
+/*This is for the color of all the texts that are not the titles*/
+.textColor{
+  color: white;
 }
