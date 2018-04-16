@@ -38,11 +38,9 @@ componentDidMount() {
   render() {
     return (
 <Grid className="peopleGrid">
-  <Row className="foodMenuTop" >
+  <Row className="peopleRow" >
     <Col xs={6} md={12}>
-
         { this.state.people.map(person => <p>{ person.first_name + " " + person.last_name + " is " + this.get_age(person.birth_date) + " " + "Years Old" }</p>)}
-
     </Col>
   </Row>
 </Grid>

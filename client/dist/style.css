@@ -2,3 +2,8 @@
 .peopleGrid{
   background: pink;
 }
+
+/*This is for the grid with the number information*/
+.numbersGrid{
+  background: lightblue;
+}
