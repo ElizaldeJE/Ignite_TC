@@ -39,15 +39,10 @@ componentDidMount() {
     return (
 <Grid className="peopleGrid">
   <Row className="foodMenuTop" >
-    <Col xs={6} md={6}>
-      <ul>
-        { this.state.people.map(person => <li>{ person.first_name + " " + person.last_name}</li>)}
-      </ul>
-    </Col>
-    <Col xs={6} md={6}>
-      <ul>
-        { this.state.people.map(person => <li>{this.get_age(person.birth_date) + " " + "Years Old"}</li>)}
-      </ul>
+    <Col xs={6} md={12}>
+
+        { this.state.people.map(person => <p>{ person.first_name + " " + person.last_name + " is " + this.get_age(person.birth_date) + " " + "Years Old" }</p>)}
+
     </Col>
   </Row>
 </Grid>
