@@ -36,6 +36,14 @@
   margin-bottom: -0.5%;
 }
 
+/*This is the title in the header*/
+.titleText2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: -0.5%;
+  color: #FF7F50;
+  font-size: 150%;
+}
+
 /*This is the text for each grid*/
 .texts{
   font-family: 'Playfair Display', serif;

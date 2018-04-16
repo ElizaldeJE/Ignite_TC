@@ -56,7 +56,7 @@ textCaseS(str) {
         </Col>
       </Row>
       <Row className="textsRow" id="texts">
-        <Col xs={6} md={12}>
+        <Col xs={6} md={12}> 
           <text className="textColor">{ this.titleCaseS(this.state.title) }</text>
         </Col>
         <Col xs={6} md={12}>
