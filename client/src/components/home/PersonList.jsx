@@ -38,9 +38,10 @@ componentDidMount() {
   render() {
     return (
 <Grid className="peopleGrid">
-  <Row className="peopleRow" >
+  <center><h1 className="titles">People</h1></center>
+  <Row className="peopleRow" id="texts">
     <Col xs={6} md={12}>
-        { this.state.people.map(person => <p>{ person.first_name + " " + person.last_name + " is " + this.get_age(person.birth_date) + " " + "Years Old" }</p>)}
+        { this.state.people.map(person => <text><br/>{ person.first_name + " " + person.last_name + " is " + this.get_age(person.birth_date) + " " + "Years Old" }</text>)}
     </Col>
   </Row>
 </Grid>

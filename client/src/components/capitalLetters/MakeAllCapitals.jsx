@@ -50,12 +50,13 @@ textCaseS(str) {
   render() {
     return (
       <Grid className="textGrid">
-        <Row className="textsRow" >
+      <center><h1 className="titleText">Text</h1></center>
+        <Row className="textsRow" id="texts">
           <Col xs={6} md={12}>
-          { this.titleCaseS(this.state.title) }
+          <text>{ this.titleCaseS(this.state.title) }</text>
           </Col>
           <Col xs={6} md={12}>
-          { this.textCaseS(this.state.text)  }
+          <text>{ this.textCaseS(this.state.text)  }</text>
           </Col>
         </Row>
       </Grid>

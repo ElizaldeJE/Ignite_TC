@@ -39,9 +39,10 @@ componentDidMount() {
   render() {
     return (
       <Grid className="numbersGrid">
-        <Row className="numbersRow" >
+      <center><h1 className="titles">Numbers</h1></center>
+        <Row className="numbersRow" id="texts">
           <Col xs={6} md={12}>
-          { this.state.numbers.map(digitos => <p>{this.primeOrNot(digitos.number)}</p>)}
+          { this.state.numbers.map(digitos => <text><br/>{this.primeOrNot(digitos.number)}</text>)}
           </Col>
         </Row>
       </Grid>
