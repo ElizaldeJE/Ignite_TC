@@ -1,16 +1,14 @@
 import React from 'react';
-
 import $ from 'jquery';
 
 export default class IsPrime extends React.Component {
   constructor(props) {
   super(props);
 
-
   this.state = {
     numbers: [],
     number: 0
-  }
+  };
 };
 
 getNumbs(){
@@ -24,17 +22,17 @@ getNumbs(){
      console.log('err', err);
    }
   })
-}
+};
 
 primeOrNot(num) {
   for(var i = 2; i < num; i++)
     if(num % i === 0) return num + " " + "Is not prime";
   return num + " " + "Is prime";
-}
+};
 
-  componentDidMount() {
-    this.getNumbs();
-  };
+componentDidMount() {
+  this.getNumbs();
+};
 
   render() {
     return (

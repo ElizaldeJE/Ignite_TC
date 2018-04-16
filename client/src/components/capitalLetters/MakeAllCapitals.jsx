@@ -10,21 +10,21 @@ export default class CapitalLetterss extends React.Component {
     text: ""
   };
 this.titleCase=this.titleCase.bind(this);
-}
+};
 
 
 titleCase(){
-$.ajax({
- url: 'http://174.138.36.217/texts/',
- method: 'GET',
- success: (data) => {
-   this.setState({title: data[0].title, text: data[0].text});
- },
- error: ( xhr, err ) => {
-   console.log('err', err);
- }
-})
-}
+  $.ajax({
+   url: 'http://174.138.36.217/texts/',
+   method: 'GET',
+   success: (data) => {
+     this.setState({title: data[0].title, text: data[0].text});
+   },
+   error: ( xhr, err ) => {
+     console.log('err', err);
+    }
+  })
+};
 
 titleCaseS(str) {
   var splitStr = str.toLowerCase().split(' ');
@@ -32,7 +32,7 @@ titleCaseS(str) {
     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
   return splitStr.join(' ');
-}
+};
 
 textCaseS(str) {
   var splitStr = str.toLowerCase().split('. ');
@@ -40,11 +40,11 @@ textCaseS(str) {
     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
   return splitStr.join('. ');
-}
+};
 
   componentDidMount() {
     this.titleCase();
-    }
+  };
 
   render() {
 
