@@ -26,7 +26,7 @@ getNumbs(){
   })
 }
 
-primeOrNah(num) {
+primeOrNot(num) {
   for(var i = 2; i < num; i++)
     if(num % i === 0) return num + " " + "Is not prime";
   return num + " " + "Is prime";
@@ -40,7 +40,7 @@ primeOrNah(num) {
     return (
       <div>
         <ul>
-          { this.state.numbers.map(digitos => <li>{this.primeOrNah(digitos.number)}</li>)}
+          { this.state.numbers.map(digitos => <li>{this.primeOrNot(digitos.number)}</li>)}
         </ul>
       </div>
     )
