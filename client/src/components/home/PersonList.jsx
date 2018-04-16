@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import { Grid, Row, Col } from "react-bootstrap";
+
 
 export default class PersonList extends React.Component {
   constructor(props) {
@@ -35,13 +37,20 @@ componentDidMount() {
 
   render() {
     return (
-      <div>
-        <ul>
-          { this.state.people.map(person => <li>{ person.first_name + " " + person.last_name}</li>)}
-
-          { this.state.people.map(person => <li>{this.get_age(person.birth_date) + " " + "Years Old"}</li>)}
-        </ul>
-      </div>
+<Grid className="peopleGrid">
+  <Row className="foodMenuTop" >
+    <Col xs={6} md={6}>
+      <ul>
+        { this.state.people.map(person => <li>{ person.first_name + " " + person.last_name}</li>)}
+      </ul>
+    </Col>
+    <Col xs={6} md={6}>
+      <ul>
+        { this.state.people.map(person => <li>{this.get_age(person.birth_date) + " " + "Years Old"}</li>)}
+      </ul>
+    </Col>
+  </Row>
+</Grid>
     )
   }
 };
