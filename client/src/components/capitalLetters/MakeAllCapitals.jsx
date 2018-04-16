@@ -1,5 +1,6 @@
-import React from 'react';
 import $ from 'jquery';
+import React from 'react';
+import { Grid, Row, Col } from "react-bootstrap";
 
 export default class CapitalLetterss extends React.Component {
   constructor(props) {
@@ -47,16 +48,17 @@ textCaseS(str) {
   };
 
   render() {
-
     return (
-      <div>
-        <div>
+      <Grid className="textGrid">
+        <Row className="textsRow" >
+          <Col xs={6} md={12}>
           { this.titleCaseS(this.state.title) }
-        </div>
-        <div>
-            { this.textCaseS(this.state.text)  }
-        </div>
-      </div>
+          </Col>
+          <Col xs={6} md={12}>
+          { this.textCaseS(this.state.text)  }
+          </Col>
+        </Row>
+      </Grid>
     )
   }
 };

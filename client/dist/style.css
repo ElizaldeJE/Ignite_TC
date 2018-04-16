@@ -7,3 +7,13 @@
 .numbersGrid{
   background: lightblue;
 }
+
+/*This is for the grid with the text information*/
+.textGrid{
+  background: brown;
+}
+
+/*This is for the whole body*/
+#theBody{
+  background: grey;
+}
